@@ -1,7 +1,10 @@
-def two_sum(nums, target):
+def two_sum_optimized(nums, target):
+    seen = {}
     for i in range(len(nums)):
-        for j in range(len(nums)):
-            if i != j and nums[i] + nums[j] == target:
-                return[i , j]
+        complement = target - nums[i]
+        if complement in seen:
+            return [seen[complement],i]
+        else:
+            seen[nums[i]] = i
 
-print(two_sum([2, 7, 11, 15], 9))
+print(two_sum_optimized([2, 7, 11, 15], 9))
