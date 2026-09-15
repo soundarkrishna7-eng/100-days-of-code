@@ -1,3 +1,8 @@
+# Problem: Best Time to Buy and Sell Stock
+# Approach:Track min price and best profit in one pass
+# Time Complexity: O(n)
+
+
 def max_profit(prices):
     min_price = prices[0]
     best_profit = 0

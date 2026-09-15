@@ -1,3 +1,8 @@
+# Problem: Valid Anagram
+# Approach: Dictionary to count letters, spend down using t
+# Time Complexity: O(n)
+
+
 def valid_anagram(s, t):
     count = {}
     if len(s) != len(t):

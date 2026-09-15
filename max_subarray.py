@@ -1,3 +1,8 @@
+# Problem: Maximum Subarray
+# Approach:Kadane's — track current_sum and best_sum
+# Time Complexity: O(n)
+
+
 def max_subarray(nums):
     current_sum = nums[0]
     best_sum = nums[0]

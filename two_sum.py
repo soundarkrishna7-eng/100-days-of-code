@@ -1,3 +1,7 @@
+# Problem: Two Sum
+# Approach: Dictionary to store number -> index, check complement in one pass
+# Time Complexity: O(n)
+
 def two_sum_optimized(nums, target):
     seen = {}
     for i in range(len(nums)):
